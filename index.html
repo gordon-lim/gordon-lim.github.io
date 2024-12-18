@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔵</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Gordon Lim</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #ffffff; /* White background for the rest of the page */
+        }
+
+        /* Hero Section */
+        .hero-section {
+            width: 100%; /* Full width */
+            background-color: #94C8E5; /* Soft lavender background */
+        }
+
+        .hero-wrapper {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px; /* Limit overall content width */
+            margin: 0 auto; /* Center content horizontally */
+            padding: 3rem 2rem;
+        }
+
+        .hero-image {
+            max-width: 40%;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 800px;
+            padding: 1rem;
+        }
+
+        .hero-content {
+            max-width: 50%;
+            text-align: left; /* Align text to the right */
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: #333;
+        }
+
+        .hero-content h1 span {
+            color: #1b4e8e;
+            font-weight: bold;
+        }
+
+        .hero-content p {
+            margin-top: 1rem;
+            line-height: 1.6;
+            color: #000;
+            font-size: 1.2rem;
+        }
+
+        /* Publications Section */
+        .publications {
+            padding: 2rem;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .publications h2 {
+            font-size: 2.5rem;
+            color: #1b4e8e;
+            margin-bottom: 2rem;
+        }
+
+        .publication-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 1.5rem auto;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1.5rem;
+        }
+
+        .publication-image img {
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .publication-content h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-content p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-content em {
+            color: #777;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .publication-buttons .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.6rem 1.2rem;
+            background-color: #1b4e8e;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .publication-buttons .button i {
+            margin-right: 0.5rem;
+        }
+
+        .publication-buttons .button:hover {
+            background-color: #143a68;
+        }
+
+
+        .hero-buttons {
+            margin-top: 2rem; /* Space above the buttons */
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1rem;
+            color: white;
+            background-color: #1b4e8e; /* Matches the color in your hero heading */
+            padding: 0.8rem 1.5rem; /* Adjust size as needed */
+            border-radius: 5px; /* Rounded corners */
+            margin-right: 1rem; /* Space between buttons */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #143a68; /* Darker shade for hover effect */
+            transform: scale(1.05); /* Slightly enlarges button on hover */
+        }
+
+        .button:active {
+            transform: scale(1); /* Prevents extra enlargement when clicked */
+        }
+
+        .button i {
+            margin-right: 0.5rem; /* Space between icon and text */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-wrapper">
+            <!-- Image on the left -->
+            <div class="hero-image">
+                <img src="assets/gordonpic.png" alt="Profile Picture">
+            </div>
+            <!-- Text on the right -->
+            <div class="hero-content">
+                <h1>
+                    <span>Gordon Lim</span><br>
+                </h1>
+                <p>gbtc (at) umich (dot) edu</p>
+                <p>
+                <b>I am graduating from the University of Michigan in April 2025.</b><br>
+                I am broadly interested in improving machine learning robustness. 
+                My work includes <b>developing benchmarks</b> to advance robust learning methods and <b>conducting human studies</b> to investigate error patterns in human annotation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="assets/GORDON_CV.pdf" class="button" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-alt"></i> Résumé
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=EMaRV60AAAAJ&hl=en" class="button" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-graduation-cap"></i> Scholar
+                    </a>
+                </div>                               
+            </div>
+        </div>
+    </div>
+
+    <!-- Publications Section -->
+<div class="publications">
+    <h2>Publications</h2>
+
+    <!-- Publication Entry -->
+    <div class="publication-item">
+        <!-- <div class="publication-image">
+            <img src="placeholder.jpg" alt="Image">
+        </div> -->
+        <div class="publication-content">
+            <h3>Towards Fair Pay and Equal Work: Imposing View Time Limits in Crowdsourced Image Classification</h3>
+            <p>Gordon Lim, Stefan Larson, Yu Huang, Kevin Leach</p>
+            <em>arXiv:2412.00260</b></em>
+            <div class="publication-buttons">
+                <a href="https://arxiv.org/abs/2412.00260" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication Entry -->
+    <div class="publication-item">
+        <!-- <div class="publication-image">
+            <img src="placeholder.jpg" alt="Image">
+        </div> -->
+        <div class="publication-content">
+            <h3>Robust Testing for Deep Learning using Human Label Noise</h3>
+            <p>Gordon Lim, Stefan Larson, Kevin Leach</p>
+            <em>ICSE DeepTest 2025 (To appear)</em>
+            <div class="publication-buttons">
+                <a href="https://arxiv.org/abs/2412.00244v1" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+                <!-- <a href="" class="button"><i class="fas fa-globe"></i> WIP</a> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication Entry -->
+    <div class="publication-item">
+        <!-- <div class="publication-image">
+            <img src="placeholder.jpg" alt="Image">
+        </div> -->
+        <div class="publication-content">
+            <h3>Label Errors in the Tobacco3482 Dataset</h3>
+            <p>Gordon Lim, Stefan Larson, Kevin Leach</p>
+            <em>WACV VisionDocs 2025 (To appear) / ICDAR Document Analysis Systems 2024 <b>(Poster)</b></em>
+            <div class="publication-buttons">
+                <a href="https://arxiv.org/abs/2412.13140" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+                <a href="assets/poster-das-tobacco-errors.pdf" class="button" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-image"></i> Poster
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication Entry -->
+    <div class="publication-item">
+        <!-- <div class="publication-image">
+            <img src="placeholder.jpg" alt="Image">
+        </div> -->
+        <div class="publication-content">
+            <h3>On Evaluation of Document Classification using RVL-CDIP</h3>
+            <p>Stefan Larson, Gordon Lim, Kevin Leach</p>
+            <em>EACL 2023</em>
+            <div class="publication-buttons">
+                <a href="https://aclanthology.org/2023.eacl-main.195.pdf" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Publication Entry -->
+    <div class="publication-item">
+        <!-- <div class="publication-image">
+            <img src="placeholder.jpg" alt="Image">
+        </div> -->
+        <div class="publication-content">
+            <h3>Evaluating Out-of-Distribution Performance on Document Image Classifiers</h3>
+            <p>Stefan Larson, Gordon Lim, Yutong Ai, David Kuang, Kevin Leach</p>
+            <em>NeurIPS D&B 2022</em>
+            <div class="publication-buttons">
+                <a href="https://arxiv.org/pdf/2210.07448" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+                <a href="assets/poster-urop-rvlcdip-ood.pdf" class="button" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-image"></i> Poster
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
