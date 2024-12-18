@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic website of Gordon Lim">
+    <meta name="keywords" content="University of Michigan, Machine Learning, Research">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔵</text></svg>">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Gordon Lim</title>
@@ -65,6 +67,18 @@
             line-height: 1.6;
             color: #000;
             font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-image, .hero-content {
+                max-width: 100%;
+                text-align: center; /* Center-align text for smaller screens */
+            }
+
+            .hero-image img {
+                max-width: 80%;
+                margin: 0 auto; /* Center the image */
+            }
         }
 
         /* Publications Section */
@@ -167,8 +181,6 @@
             margin-right: 0.5rem; /* Space between icon and text */
         }
 
-
-
     </style>
 </head>
 <body>
@@ -177,7 +189,7 @@
         <div class="hero-wrapper">
             <!-- Image on the left -->
             <div class="hero-image">
-                <img src="assets/gordonpic.png" alt="Profile Picture">
+                <img src="assets/gordonpic.png" alt="Profile Picture" loading="lazy">
             </div>
             <!-- Text on the right -->
             <div class="hero-content">
@@ -216,7 +228,7 @@
             <p>Gordon Lim, Stefan Larson, Yu Huang, Kevin Leach</p>
             <em>arXiv:2412.00260</b></em>
             <div class="publication-buttons">
-                <a href="https://arxiv.org/abs/2412.00260" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+                <a href="https://arxiv.org/abs/2412.00260" class="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
             </div>
         </div>
     </div>
@@ -231,8 +243,8 @@
             <p>Gordon Lim, Stefan Larson, Kevin Leach</p>
             <em>ICSE DeepTest 2025 (To appear)</em>
             <div class="publication-buttons">
-                <a href="https://arxiv.org/abs/2412.00244v1" class="button"><i class="fas fa-file-alt"></i> Paper</a>
-                <!-- <a href="" class="button"><i class="fas fa-globe"></i> WIP</a> -->
+                <a href="https://arxiv.org/abs/2412.00244v1" class="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
+                <!-- <a href="" class="button"><i class="fas fa-globe" target="_blank" rel="noopener noreferrer"></i> WIP</a> -->
             </div>
         </div>
     </div>
@@ -247,7 +259,7 @@
             <p>Gordon Lim, Stefan Larson, Kevin Leach</p>
             <em>WACV VisionDocs 2025 (To appear) / ICDAR Document Analysis Systems 2024 <b>(Poster)</b></em>
             <div class="publication-buttons">
-                <a href="https://arxiv.org/abs/2412.13140" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+                <a href="https://arxiv.org/abs/2412.13140" class="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
                 <a href="assets/poster-das-tobacco-errors.pdf" class="button" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-image"></i> Poster
                 </a>
@@ -265,7 +277,7 @@
             <p>Stefan Larson, Gordon Lim, Kevin Leach</p>
             <em>EACL 2023</em>
             <div class="publication-buttons">
-                <a href="https://aclanthology.org/2023.eacl-main.195.pdf" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+                <a href="https://aclanthology.org/2023.eacl-main.195.pdf" class="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
             </div>
         </div>
     </div>
@@ -280,7 +292,7 @@
             <p>Stefan Larson, Gordon Lim, Yutong Ai, David Kuang, Kevin Leach</p>
             <em>NeurIPS D&B 2022</em>
             <div class="publication-buttons">
-                <a href="https://arxiv.org/pdf/2210.07448" class="button"><i class="fas fa-file-alt"></i> Paper</a>
+                <a href="https://arxiv.org/pdf/2210.07448" class="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
                 <a href="assets/poster-urop-rvlcdip-ood.pdf" class="button" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-image"></i> Poster
                 </a>
